@@ -1,0 +1,415 @@
+[log] > Debug logs enabled for "Hls instance" in hls.js version 1.6.2 hls.js:1197:19
+[log] > stopLoad hls.js:35552:19
+[log] > loadSource:http://localhost:8080/stream.m3u8 hls.js:35511:19
+[log] > [stream-controller]: Trigger BUFFER_RESET hls.js:33580:12
+[log] > attachMedia hls.js:35464:19
+[log] > [buffer-controller]: created media source: MediaSource hls.js:18952:12
+[log] > [buffer-controller]: Media source opened hls.js:18752:18
+[log] > [buffer-controller]: checkPendingTracks (pending: 0 codec events expected: 0) {} hls.js:19787:12
+GET
+http://localhost:8080/favicon.ico
+[HTTP/1.1 404 Not Found 1ms]
+
+[log] > [level-controller]: manifest loaded, 1 level(s) found, first bitrate: 0 hls.js:32774:16
+[log] > [buffer-controller]: 1 bufferCodec event(s) expected. hls.js:18907:12
+[log] > auto startLoad with configured startPosition -1 hls.js:34931:25
+[log] > startLoad(-1) hls.js:35537:19
+[log] > [level-controller]: Switching to level 0 (SDR @0) from level -1 hls.js:33001:14
+[log] > [level-controller]: reload live playlist 0bps in 9996 ms hls.js:18137:12
+[log] > [stream-controller]: STOPPED->IDLE hls.js:10625:16
+[log] > [subtitle-stream-controller]: STOPPED->IDLE hls.js:10625:16
+[log] > [level-controller]: live playlist 0 REFRESHED 5--1 hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 19996 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392 hls.js:33627:12
+[log] > [stream-controller]: Live playlist sliding: 0.00 start-sn: 0->0 fragments: 6 hls.js:10255:14
+[log] > [stream-controller]: Setting startPosition to -1 to start at live edge 28.725392 hls.js:10289:16
+[log] > [interstitials]: setSchedulePosition 0, undefined hls.js:24976:12
+[log] > [interstitials]: buffered to boundary [primary: 0.00-Infinity] hls.js:25445:16
+[log] > [interstitials]: resuming [primary: 0.00-Infinity] hls.js:25140:12
+[log] > [buffer-controller]: Updating MediaSource duration to 58.725 hls.js:19774:16
+[log] > [stream-controller]: Setting startPosition to 28.725392 to match start frag at live edge. mainStart: 28.725392 liveSyncPosition: 28.726391999999997 frag.start: 20.02002 hls.js:10023:16
+[log] > [stream-controller]: Loading main sn: initSegment of level 0 (frag:[0.000-0.000]) cc: 0 [0-5], target: 0 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [stream-controller]: FRAG_LOADING->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: 2 of level 0 (frag:[20.020-30.030]) cc: 0 [0-5], target: 28.725 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > injecting Web Worker for "main" hls.js:16910:22
+[log] > [transmuxer-interface]: Starting new transmux session for main sn: 2 level: 0 id: 1
+        discontinuity: true
+        trackSwitch: true
+        contiguous: false
+        accurateTimeOffset: false
+        timeOffset: 20.02002
+        initSegmentChange: true hls.js:17012:25
+[log] > [stream-controller]: Loaded main sn: 2 of level 0 hls.js:9443:18
+[log] > Debug logs enabled for "main" in hls.js version 1.6.2 f45d2c70-fc38-4469-a175-311c8233e9e4:1197:19
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [stream-controller]: Init video buffer, container:video/mp4, codecs[level/parsed]=[/avc1.64001F] hls.js:34232:14
+[log] > [buffer-controller]: BUFFER_CODECS: "video" (current SB count 0) hls.js:19165:12
+[log] > [buffer-controller]: checkPendingTracks (pending: 1 codec events expected: 1) {"video":{"listeners":[],"codec":"avc1.64001F","container":"video/mp4","id":"main"}} hls.js:19787:12
+[log] > [buffer-controller]: creating sourceBuffer(video/mp4;codecs=avc1.64001F) {"listeners":[],"codec":"avc1.64001F","container":"video/mp4","id":"main"} hls.js:19856:16
+[log] > [buffer-controller]: SourceBuffers created. Running queue: 
+video: (SourceBuffer) 
+audio: (none) 
+audiovideo: (none) } hls.js:19826:14
+[log] > [audio-stream-controller]: InitPTS for cc: 0 found from main: 2.002002119638746e-8/1 hls.js:17190:14
+[log] > [transmuxer.ts]: Flushed main sn: 2 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 2 of level 0 (frag:[20.020-30.030]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 2 of level 0 (frag:[20.020-30.030] > buffer:[20.053-30.063]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: seek to target start position 28.725392 from current time 0 buffer start 20.052969 hls.js:33966:16
+[log] > [stream-controller]: Loading main sn: 3 of level 0 (frag:[30.030-40.040]) cc: 0 [0-5], target: 30.063 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [stream-controller]: media seeking to 28.725, state: FRAG_LOADING hls.js:9185:15
+[log] > [audio-stream-controller]: media seeking to 28.725, state: STOPPED hls.js:9185:15
+[log] > [subtitle-stream-controller]: media seeking to 28.725, state: IDLE hls.js:9185:15
+[log] > [stream-controller]: Loaded main sn: 3 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [transmuxer.ts]: Flushed main sn: 3 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 3 of level 0 (frag:[30.030-40.040]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 3 of level 0 (frag:[30.030-40.040] > buffer:[20.053-40.073]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: 4 of level 0 (frag:[40.040-48.715]) cc: 0 [0-5], target: 40.073 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [stream-controller]: Loaded main sn: 4 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [transmuxer.ts]: Flushed main sn: 4 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 4 of level 0 (frag:[40.040-48.715]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 4 of level 0 (frag:[40.040-48.715] > buffer:[20.053-48.748]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: initSegment of level 0 (frag:[48.715-48.715]) cc: 1 [0-5], target: 48.715 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+Media resource blob:http://localhost:8080/57a0b5c2-bde7-4cbb-b55e-0dcf1f32abb7 could not be decoded. localhost:8080
+[log] > [stream-controller]: FRAG_LOADING->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: 5 of level 0 (frag:[48.715-58.725]) cc: 1 [0-5], target: 48.748 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [transmuxer-interface]: Starting new transmux session for main sn: 5 level: 0 id: 1
+        discontinuity: true
+        trackSwitch: false
+        contiguous: true
+        accurateTimeOffset: true
+        timeOffset: 48.71538202869536
+        initSegmentChange: true hls.js:17012:25
+[log] > [stream-controller]: Loaded main sn: 5 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [stream-controller]: Init video buffer, container:video/mp4, codecs[level/parsed]=[/avc1.64001F] hls.js:34232:14
+[log] > [buffer-controller]: BUFFER_CODECS: "video" (current SB count 1) hls.js:19165:12
+[warn] > [buffer-controller]: Failed 1/3 times to append segment in "video" sourceBuffer ([object MediaError]) hls.js:19448:21
+[log] > [stream-controller]: PARSING->ERROR hls.js:10625:16
+[log] > [audio-stream-controller]: STOPPED->ERROR hls.js:10625:16
+[log] > stopLoad hls.js:35552:19
+[log] > [stream-controller]: ERROR->STOPPED hls.js:10625:16
+[log] > [audio-stream-controller]: ERROR->STOPPED hls.js:10625:16
+[log] > [subtitle-stream-controller]: IDLE->STOPPED hls.js:10625:16
+DOMException: An attempt was made to use an object that is not, or is no longer, usable
+    appendExecutor buffer-controller.ts:1643
+    execute buffer-controller.ts:845
+    executeNext buffer-operation-queue.ts:102
+    append buffer-operation-queue.ts:35
+    append buffer-controller.ts:1727
+    onBufferAppending buffer-controller.ts:933
+    emit index.js:182
+    emit hls.ts:382
+    trigger hls.ts:390
+    _bufferInitSegment stream-controller.ts:1492
+    _bufferInitSegment stream-controller.ts:1488
+    _handleTransmuxComplete stream-controller.ts:1205
+    handleTransmuxComplete transmuxer-interface.ts:447
+    onWorkerMessage transmuxer-interface.ts:384
+    TransmuxerInterface transmuxer-interface.ts:92
+    _handleFragmentLoadProgress stream-controller.ts:812
+    progressCallback base-stream-controller.ts:489
+    result base-stream-controller.ts:934
+    promise callback*_doFragLoad base-stream-controller.ts:932
+    _loadFragForPlayback base-stream-controller.ts:492
+    loadFragment base-stream-controller.ts:467
+    loadFragment stream-controller.ts:409
+    doTickIdle stream-controller.ts:387
+    doTick stream-controller.ts:234
+    tick task-loop.ts:109
+    completeInitSegmentLoad base-stream-controller.ts:693
+    _loadInitSegment base-stream-controller.ts:670
+    promise callback*_loadInitSegment base-stream-controller.ts:623
+    loadFragment stream-controller.ts:402
+    doTickIdle stream-controller.ts:387
+    doTick stream-controller.ts:234
+    tick task-loop.ts:109
+    onLevelLoaded stream-controller.ts:730
+    emit index.js:203
+    emit hls.ts:382
+    trigger hls.ts:390
+    handlePlaylistLoaded playlist-loader.ts:747
+    handleTrackOrLevelPlaylist playlist-loader.ts:563
+    onSuccess playlist-loader.ts:360
+    readystatechange xhr-loader.ts:232
+    openAndSendXhr xhr-loader.ts:153
+    loadInternal xhr-loader.ts:125
+    load xhr-loader.ts:83
+    load playlist-loader.ts:393
+    onManifestLoading playlist-loader.ts:158
+    emit index.js:203
+    emit hls.ts:382
+    trigger hls.ts:390
+    loadSource hls.ts:520
+    <anonymous> (index):14
+localhost:8080:19:17
+[log] > Debug logs enabled for "main" in hls.js version 1.6.2 f45d2c70-fc38-4469-a175-311c8233e9e4:1197:19
+[log] > recoverMediaError hls.js:35608:19
+[log] > detachMedia hls.js:35482:19
+[log] > [buffer-controller]: media source detaching hls.js:19047:14
+[log] > attachMedia hls.js:35464:19
+[log] > [buffer-controller]: created media source: MediaSource hls.js:18952:12
+[log] > startLoad(28.725392) hls.js:35537:19
+[log] > [level-controller]: reload live playlist 0bps in 19882 ms hls.js:18137:12
+[log] > [stream-controller]: STOPPED->IDLE hls.js:10625:16
+[log] > [subtitle-stream-controller]: STOPPED->IDLE hls.js:10625:16
+[log] > [audio-stream-controller]: InitPTS for cc: 1 found from main: -48.71538202869536/1 hls.js:17190:14
+[log] > [buffer-controller]: Media source opened hls.js:18752:18
+[log] > [buffer-controller]: Updating MediaSource duration to 58.725 hls.js:19774:16
+[log] > [interstitials]: setSchedulePosition 0, undefined hls.js:24976:12
+[log] > [interstitials]: buffered to boundary [primary: 0.00-Infinity] hls.js:25445:16
+[log] > [interstitials]: resuming [primary: 0.00-Infinity] hls.js:25140:12
+[log] > [buffer-controller]: checkPendingTracks (pending: 0 codec events expected: 1) {} hls.js:19787:12
+[log] > [stream-controller]: Loading main sn: 2 of level 0 (frag:[20.020-30.030]) cc: 0 [0-5], target: 28.725 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [transmuxer-interface]: Starting new transmux session for main sn: 2 level: 0 id: 1
+        discontinuity: true
+        trackSwitch: true
+        contiguous: false
+        accurateTimeOffset: true
+        timeOffset: 20.02002
+        initSegmentChange: true hls.js:17012:25
+[log] > [stream-controller]: Loaded main sn: 2 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [stream-controller]: Init video buffer, container:video/mp4, codecs[level/parsed]=[/avc1.64001F] hls.js:34232:14
+[log] > [buffer-controller]: BUFFER_CODECS: "video" (current SB count 0) hls.js:19165:12
+[log] > [buffer-controller]: checkPendingTracks (pending: 1 codec events expected: 1) {"video":{"listeners":[],"codec":"avc1.64001F","container":"video/mp4","id":"main"}} hls.js:19787:12
+[log] > [buffer-controller]: creating sourceBuffer(video/mp4;codecs=avc1.64001F) {"listeners":[],"codec":"avc1.64001F","container":"video/mp4","id":"main"} hls.js:19856:16
+[log] > [buffer-controller]: SourceBuffers created. Running queue: 
+video: (SourceBuffer) 
+audio: (none) 
+audiovideo: (none) } hls.js:19826:14
+[log] > [transmuxer.ts]: Flushed main sn: 2 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 2 of level 0 (frag:[20.020-30.030]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 2 of level 0 (frag:[20.020-30.030] > buffer:[20.053-30.063]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: seek to target start position 28.725392 from current time 0 buffer start 20.052969 hls.js:33966:16
+[log] > [stream-controller]: Loading main sn: 3 of level 0 (frag:[30.030-40.040]) cc: 0 [0-5], target: 30.063 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [stream-controller]: media seeking to 28.725, state: FRAG_LOADING hls.js:9185:15
+[log] > [audio-stream-controller]: media seeking to 28.725, state: STOPPED hls.js:9185:15
+[log] > [subtitle-stream-controller]: media seeking to 28.725, state: IDLE hls.js:9185:15
+[log] > [stream-controller]: Loaded main sn: 3 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [transmuxer.ts]: Flushed main sn: 3 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 3 of level 0 (frag:[30.030-40.040]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 3 of level 0 (frag:[30.030-40.040] > buffer:[20.053-40.073]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: 4 of level 0 (frag:[40.040-48.715]) cc: 0 [0-5], target: 40.073 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [stream-controller]: Loaded main sn: 4 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [transmuxer.ts]: Flushed main sn: 4 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 4 of level 0 (frag:[40.040-48.715]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 4 of level 0 (frag:[40.040-48.715] > buffer:[20.053-48.748]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: 5 of level 0 (frag:[48.715-58.725]) cc: 1 [0-5], target: 48.748 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+Media resource blob:http://localhost:8080/dbd125b1-1f2d-4c82-b0f2-33ef6441ee9d could not be decoded. localhost:8080
+[log] > [transmuxer-interface]: Starting new transmux session for main sn: 5 level: 0 id: 1
+        discontinuity: true
+        trackSwitch: false
+        contiguous: true
+        accurateTimeOffset: true
+        timeOffset: 48.71538202869536
+        initSegmentChange: true hls.js:17012:25
+[log] > [stream-controller]: Loaded main sn: 5 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [stream-controller]: Init video buffer, container:video/mp4, codecs[level/parsed]=[/avc1.64001F] hls.js:34232:14
+[log] > [buffer-controller]: BUFFER_CODECS: "video" (current SB count 1) hls.js:19165:12
+[warn] > [buffer-controller]: Failed 1/3 times to append segment in "video" sourceBuffer ([object MediaError]) hls.js:19448:21
+[log] > [stream-controller]: PARSING->ERROR hls.js:10625:16
+[log] > [audio-stream-controller]: STOPPED->ERROR hls.js:10625:16
+[log] > stopLoad hls.js:35552:19
+[log] > [stream-controller]: ERROR->STOPPED hls.js:10625:16
+[log] > [audio-stream-controller]: ERROR->STOPPED hls.js:10625:16
+[log] > [subtitle-stream-controller]: IDLE->STOPPED hls.js:10625:16
+DOMException: An attempt was made to use an object that is not, or is no longer, usable
+    appendExecutor buffer-controller.ts:1643
+    execute buffer-controller.ts:845
+    executeNext buffer-operation-queue.ts:102
+    append buffer-operation-queue.ts:35
+    append buffer-controller.ts:1727
+    onBufferAppending buffer-controller.ts:933
+    emit index.js:182
+    emit hls.ts:382
+    trigger hls.ts:390
+    _bufferInitSegment stream-controller.ts:1492
+    _bufferInitSegment stream-controller.ts:1488
+    _handleTransmuxComplete stream-controller.ts:1205
+    handleTransmuxComplete transmuxer-interface.ts:447
+    onWorkerMessage transmuxer-interface.ts:384
+    TransmuxerInterface transmuxer-interface.ts:92
+    _handleFragmentLoadProgress stream-controller.ts:812
+    progressCallback base-stream-controller.ts:489
+    result base-stream-controller.ts:934
+    promise callback*_doFragLoad base-stream-controller.ts:932
+    _loadFragForPlayback base-stream-controller.ts:492
+    loadFragment base-stream-controller.ts:467
+    loadFragment stream-controller.ts:409
+    doTickIdle stream-controller.ts:387
+    doTick stream-controller.ts:234
+    tick task-loop.ts:109
+    completeInitSegmentLoad base-stream-controller.ts:693
+    _loadInitSegment base-stream-controller.ts:670
+    promise callback*_loadInitSegment base-stream-controller.ts:623
+    loadFragment stream-controller.ts:402
+    doTickIdle stream-controller.ts:387
+    doTick stream-controller.ts:234
+    tick task-loop.ts:109
+    onLevelLoaded stream-controller.ts:730
+    emit index.js:203
+    emit hls.ts:382
+    trigger hls.ts:390
+    handlePlaylistLoaded playlist-loader.ts:747
+    handleTrackOrLevelPlaylist playlist-loader.ts:563
+    onSuccess playlist-loader.ts:360
+    readystatechange xhr-loader.ts:232
+    openAndSendXhr xhr-loader.ts:153
+    loadInternal xhr-loader.ts:125
+    load xhr-loader.ts:83
+    load playlist-loader.ts:393
+    onManifestLoading playlist-loader.ts:158
+    emit index.js:203
+    emit hls.ts:382
+    trigger hls.ts:390
+    loadSource hls.ts:520
+    <anonymous> (index):14
+localhost:8080:19:17
+[log] > Debug logs enabled for "main" in hls.js version 1.6.2 f45d2c70-fc38-4469-a175-311c8233e9e4:1197:19
+[log] > recoverMediaError hls.js:35608:19
+[log] > detachMedia hls.js:35482:19
+[log] > [buffer-controller]: media source detaching hls.js:19047:14
+[log] > attachMedia hls.js:35464:19
+[log] > [buffer-controller]: created media source: MediaSource hls.js:18952:12
+[log] > startLoad(28.725392) hls.js:35537:19
+[log] > [level-controller]: reload live playlist 0bps in 19709 ms hls.js:18137:12
+[log] > [stream-controller]: STOPPED->IDLE hls.js:10625:16
+[log] > [subtitle-stream-controller]: STOPPED->IDLE hls.js:10625:16
+[log] > [buffer-controller]: Media source opened hls.js:18752:18
+[log] > [buffer-controller]: Updating MediaSource duration to 58.725 hls.js:19774:16
+[log] > [interstitials]: setSchedulePosition 0, undefined hls.js:24976:12
+[log] > [interstitials]: buffered to boundary [primary: 0.00-Infinity] hls.js:25445:16
+[log] > [interstitials]: resuming [primary: 0.00-Infinity] hls.js:25140:12
+[log] > [buffer-controller]: checkPendingTracks (pending: 0 codec events expected: 1) {} hls.js:19787:12
+[log] > [stream-controller]: Loading main sn: 2 of level 0 (frag:[20.020-30.030]) cc: 0 [0-5], target: 28.725 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [transmuxer-interface]: Starting new transmux session for main sn: 2 level: 0 id: 1
+        discontinuity: true
+        trackSwitch: true
+        contiguous: false
+        accurateTimeOffset: true
+        timeOffset: 20.02002
+        initSegmentChange: true hls.js:17012:25
+[log] > [stream-controller]: Loaded main sn: 2 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [stream-controller]: Init video buffer, container:video/mp4, codecs[level/parsed]=[/avc1.64001F] hls.js:34232:14
+[log] > [buffer-controller]: BUFFER_CODECS: "video" (current SB count 0) hls.js:19165:12
+[log] > [buffer-controller]: checkPendingTracks (pending: 1 codec events expected: 1) {"video":{"listeners":[],"codec":"avc1.64001F","container":"video/mp4","id":"main"}} hls.js:19787:12
+[log] > [buffer-controller]: creating sourceBuffer(video/mp4;codecs=avc1.64001F) {"listeners":[],"codec":"avc1.64001F","container":"video/mp4","id":"main"} hls.js:19856:16
+[log] > [buffer-controller]: SourceBuffers created. Running queue: 
+video: (SourceBuffer) 
+audio: (none) 
+audiovideo: (none) } hls.js:19826:14
+[log] > [transmuxer.ts]: Flushed main sn: 2 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 2 of level 0 (frag:[20.020-30.030]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 2 of level 0 (frag:[20.020-30.030] > buffer:[20.053-30.063]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: seek to target start position 28.725392 from current time 0 buffer start 20.052969 hls.js:33966:16
+[log] > [stream-controller]: Loading main sn: 3 of level 0 (frag:[30.030-40.040]) cc: 0 [0-5], target: 30.063 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [stream-controller]: media seeking to 28.725, state: FRAG_LOADING hls.js:9185:15
+[log] > [audio-stream-controller]: media seeking to 28.725, state: STOPPED hls.js:9185:15
+[log] > [subtitle-stream-controller]: media seeking to 28.725, state: IDLE hls.js:9185:15
+[log] > [stream-controller]: Loaded main sn: 3 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [transmuxer.ts]: Flushed main sn: 3 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 3 of level 0 (frag:[30.030-40.040]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 3 of level 0 (frag:[30.030-40.040] > buffer:[20.053-40.073]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: 4 of level 0 (frag:[40.040-48.715]) cc: 0 [0-5], target: 40.073 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [stream-controller]: Loaded main sn: 4 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [transmuxer.ts]: Flushed main sn: 4 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 4 of level 0 (frag:[40.040-48.715]) hls.js:10532:12
+[log] > [stream-controller]: Buffered main sn: 4 of level 0 (frag:[40.040-48.715] > buffer:[20.053-48.748]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [stream-controller]: Loading main sn: 5 of level 0 (frag:[48.715-58.725]) cc: 1 [0-5], target: 48.748 hls.js:9724:12
+[log] > [stream-controller]: IDLE->FRAG_LOADING hls.js:10625:16
+[log] > [transmuxer-interface]: Starting new transmux session for main sn: 5 level: 0 id: 1
+        discontinuity: true
+        trackSwitch: false
+        contiguous: true
+        accurateTimeOffset: true
+        timeOffset: 48.71538202869536
+        initSegmentChange: true hls.js:17012:25
+[log] > [stream-controller]: Loaded main sn: 5 of level 0 hls.js:9443:18
+[log] > [stream-controller]: FRAG_LOADING->PARSING hls.js:10625:16
+[log] > [stream-controller]: Init video buffer, container:video/mp4, codecs[level/parsed]=[/avc1.64001F] hls.js:34232:14
+[log] > [buffer-controller]: BUFFER_CODECS: "video" (current SB count 1) hls.js:19165:12
+[log] > [transmuxer.ts]: Flushed main sn: 5 of level 0 hls.js:16848:46
+[log] > [stream-controller]: PARSING->PARSED hls.js:10625:16
+[log] > [stream-controller]: Parsed main sn: 5 of level 0 (frag:[48.715-58.725]) hls.js:10532:12
+Media resource blob:http://localhost:8080/047c8f4e-1e26-49dd-97da-fe8df85027fc could not be decoded. localhost:8080
+[log] > [stream-controller]: Buffered main sn: 5 of level 0 (frag:[48.715-58.725] > buffer:[20.053-58.758]) hls.js:9594:12
+[log] > [stream-controller]: PARSED->IDLE hls.js:10625:16
+[log] > [level-controller]: Loading level index 0 age 20.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4984 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 25.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4993 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 30.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4986 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 35.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4977 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 40.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4987 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 45.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4990 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 50.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4991 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 55.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4987 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 60.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4985 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
+[log] > [level-controller]: Loading level index 0 age 65.0 http://localhost:8080/stream.m3u8 hls.js:32878:12
+[log] > [level-controller]: live playlist 0 MISSED hls.js:18052:14
+[log] > [level-controller]: reload live playlist 0bps in 4959 ms hls.js:18137:12
+[log] > [stream-controller]: Level 0 loaded [0,5][part-5--1], cc [0, 1] duration:58.725392038705365 hls.js:33627:12
